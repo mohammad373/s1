@@ -20,7 +20,7 @@ def __target__():
             sys.exit()
         except:
             sys.exit()
-    r1 = requests.get("https://api.hackertarget.com/whois/?q=" + target)
+    r1 = requests.get("https://api.hackertarget.com/whois/?q=" + target).text
     if r1.status_code != 200:
         try:
             time.sleep(1)
