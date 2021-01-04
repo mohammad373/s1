@@ -21,16 +21,7 @@ def __target__():
         except:
             sys.exit()
     r1 = requests.get("https://api.hackertarget.com/whois/?q=" + target).text
-    #    if r1.status_code != 200:
-    #        try:
-    #            time.sleep(1)
-    #            print(Fore.RED + "\n[!] ~ Error : Your Domain Is Not Found ;(")
-    #            time.sleep(1)
-    #            sys.exit()
-    #        except:
-    #            sys.exit()
-    
-    print(r1)
+    print(Fore.RED +r1["org : "] + hhjhjhjhjhjhjhjhjhjh)
     time.sleep(1)
     sys.exit()
 __target__()
