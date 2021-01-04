@@ -29,8 +29,8 @@ def __target__():
     #            sys.exit()
     #        except:
     #            sys.exit()
-    else:
-        print(r1)
-        time.sleep(1)
-        sys.exit()
+    
+    print(r1)
+    time.sleep(1)
+    sys.exit()
 __target__()
